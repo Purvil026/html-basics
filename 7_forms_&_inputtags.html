@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and input tags</title>
+</head>
+
+<body>
+
+    <h2>If you are interested then fill up the following form below</h2>
+
+    <form action="/action_page.php">
+
+        <!-- first and last name -->
+
+        <div>
+            <label for="first name">First Name</label>
+            <input type="text" name="myfirstname" id="first name">
+
+            <label for="last name">Last Name</label>
+            <input type="text" name="mylastname" id="last name">
+
+            <!-- note: the for attribute of label tag should be equal to the id attribute of input tag to bind them together -->
+
+            <!-- form name:is used to reference the form-data after submitting the form or to reference the element in a JavaScript -->
+
+        </div>
+
+        <br>
+
+        <!-- phone no -->
+
+        <div>
+            <label for="phone no">Phone no.</label>
+            <input type="tel" name="myphoneno" id="phone no">
+        </div>
+
+        <br>
+
+        <!-- email -->
+
+        <div>
+            <label for="email">E-mail</label>
+            <input type="email" name="myemail" id="email">
+        </div>
+
+        <br>
+
+        <!-- password -->
+
+        <div>
+            <label for="pw">Enter password</label>
+            <input type="password" name="mypw" id="pw">
+        </div>
+
+        <br>
+
+        <!-- gender -->
+
+        <div>
+
+            <span>Gender:</span>
+            <label for="gender">Male</label>
+            <input type="radio" name="mygender" id="gender">
+
+            <label for="gender">Female</label>
+            <input type="radio" name="mygender" id="gender">
+
+            <label for="gender">Others</label>
+            <input type="radio" name="mygender" id="gender">
+
+        </div>
+
+        <br>
+
+        <!-- text area -->
+
+        <div>
+            <label for="yourself">Write about yourself</label><br>
+            <textarea name="moreaboutyou" id="yourself" cols="100" rows="10"></textarea>
+        </div>
+
+        <br>
+
+        <!-- checkbox eligibility -->
+
+        <div>
+            <label for="eligibility">Are you eligible?</label>
+            <input type="checkbox" name="myeligibility" id="eligibility">
+        </div>
+
+        <!-- To keep checkbox by default ticked, write cheked attribute -->
+        <!-- <div>
+            <label for="eligibility">Are you eligible?</label>
+            <input type="checkbox" checked name="myeligibility" id="eligibility">
+        </div> -->
+
+        <br>
+
+        <!-- select tag -->
+
+        <div>
+            <label for="laptop">Laptop</label>
+            <select name="mysubject" id="subject">
+                <option value="Apple">Apple</option>
+                <option value="Dell">Dell</option>
+                <option value="HP">HP</option>
+            </select>
+        </div>
+
+        <!-- To keep one option selected -->
+
+        <!-- <div>
+            <label for="laptop">Laptop</label>
+            <select name="mysubject" id="subject">
+                <option value="Apple">Apple</option>
+                <option value="Dell">Dell</option>
+                <option value="HP" Selected>HP</option>
+            </select>
+        </div> -->
+
+        <br>
+
+        <!-- number -->
+
+        <div>
+            <label for="copies">How many copies?</label>
+            <input type="number" name="mycopies" id="copies">
+        </div>
+
+        <br>
+
+        <!-- file -->
+
+        <div>
+            <label for="file">Upload file</label>
+            <input type="file" name="myfile" id="file">
+        </div>
+
+        <br>
+
+        <!-- date -->
+
+        <div>
+            <label for="date">Select date</label>
+            <input type="date" name="dateselect" id="date">
+        </div>
+
+        <br>
+
+        <!-- search bar -->
+
+        <div>
+            <label for="searchbar">Search</label>
+            <input type="search" name="mysearch" id="searchbar">
+        </div>
+
+        <br>
+
+        <!-- url -->
+
+        <div>
+            <label for="link">Enter url</label>
+            <input type="url" name="mylink" id="link">
+        </div>
+
+        <br>
+
+        <!-- submit button and reset button -->
+
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset form">
+        </div>    
+
+    </form>
+
+</body>
+</html>
